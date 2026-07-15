@@ -121,11 +121,18 @@ streamlit run app.py
 
 Opens at `http://localhost:8501`. The sidebar has one-click sample questions and a button to clear the conversation history.
 
+### Web UI interface for the chatbot
+![Customer Care Assistant](image-2.png)
+
 **CLI**
 
 ```bash
 python main.py
 ```
+
+### CLI UI interface for the chatbot
+![Customer Care Assistant cli](image-3.png)
+
 
 Interactive prompt — type a question and press Enter. Type `quit` to exit.
 
@@ -156,6 +163,10 @@ extra setup. Run the ingestion scripts first so there's data to show.
 | `guides` | `data/telecom_guide.pdf` | Chunks of 600 chars with 100-char overlap |
 
 The retriever fetches the top 3 results from each collection (9 context documents total) for every query.
+
+### Web UI for visualising the vectorDB data
+![Browse Data points](image.png)
+![Chroma Vector Store Explorer](image-1.png)
 
 ## Regenerating Seed Data
 
