@@ -238,4 +238,6 @@ git rm --cached .env.example      # keeps the local file, stops tracking it
 ### `python3 ingest_pdf.py` — "No collections" / retriever finds nothing
 
 You must run **all three** ingestion scripts before `app.py` / `main.py` have
-anything to retrieve. Re-run any you skipped.
+anything to retrieve. Re-run any you skipped. (On a deployed instance this is
+handled automatically by `bootstrap.ensure_ingested()`.)
+

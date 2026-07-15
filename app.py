@@ -3,6 +3,7 @@ os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
 import streamlit as st
 from dotenv import load_dotenv
+from bootstrap import ensure_ingested
 from rag_chain import build_chain
 
 load_dotenv()
@@ -26,6 +27,9 @@ st.set_page_config(
 
 @st.cache_resource
 def get_chain():
+    # On a fresh deploy the vector store doesn't exist yet — build it once.
+    with st.spinner("Preparing knowledge base (first run only)…"):
+        ensure_ingested()
     return build_chain()
 
 if "messages" not in st.session_state:
