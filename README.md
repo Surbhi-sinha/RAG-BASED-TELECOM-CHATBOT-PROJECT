@@ -22,6 +22,7 @@ ChatPromptTemplate → Qwen3-32B (Groq) → Answer
 **Embedding model:** `sentence-transformers/all-MiniLM-L6-v2` (runs locally via HuggingFace)  
 **LLM:** `qwen/qwen3-32b` served by [Groq](https://groq.com)
 
+
 ## Project Structure
 
 ```
@@ -45,6 +46,9 @@ rag-telecom-chatbot/
 ├── uv.lock
 └── .env.example
 ```
+
+
+![alt text](<FAQ JSON-LD Schema-2026-07-16-093215.png>)
 
 ## Prerequisites
 
