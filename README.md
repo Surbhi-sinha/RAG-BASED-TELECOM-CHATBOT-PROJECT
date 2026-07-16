@@ -102,6 +102,8 @@ HF_TOKEN=your_huggingface_token_here
 Run the three ingestion scripts once to build the vector store (make sure the
 venv is activated first — see the warning under step 1):
 
+in case you have `python3` replace the `python` with `python3` in the commands below
+
 ```bash
 python ingest_faq.py
 python ingest_tickets.py
